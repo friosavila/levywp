@@ -1,0 +1,36 @@
+title: Levywp
+author: Fernando Rios-Avila
+version: 1.0.0
+quarto-required: ">=1.4.0"
+contributes:
+  formats:
+    common:
+      toc: false
+      filters:
+        - levywp.lua
+    pdf:
+      documentclass: article
+      pagesize: letter
+      margin-left: 1in
+      margin-right: 1in
+      margin-top: 1in
+      margin-bottom: 1in
+      linestretch: 1.5
+      include-in-header: header.tex
+      date-format: long
+      header-includes: |
+        \usepackage{lipsum}
+ 
+      mainfont: "Times New Roman"
+      fontsize: 12pt
+      tbl-cap-location: top
+      fig-cap-location: top
+      template-partials: 
+        - "logo.png"
+        - "citations.tex"
+        - "title.tex"    
+        - "before-body.tex"
+        - "_authors.tex"
+    html:
+      css: styles.css
+

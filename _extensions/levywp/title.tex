@@ -1,0 +1,40 @@
+% This is where the selected code should go
+
+% Check if a title is provided
+$if(title)$
+    \title{
+        $title$
+        % Check if thanks is provided
+        $if(thanks)$
+            \footnote{$thanks$}
+        $endif$
+    }
+$endif$
+
+% Check if a subtitle is provided
+$if(subtitle)$
+    % Check if it's a beamer document class
+    $if(beamer)$
+    $else$
+        % Include the etoolbox package for subtitle command
+        \usepackage{etoolbox}
+        \makeatletter
+        \providecommand{\subtitle}[1]{
+            % Append the subtitle to the title
+            \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+        }
+        \makeatother
+    $endif$
+    % Set the subtitle
+    \subtitle{$subtitle$}
+$endif$
+
+% Set the authors
+
+\author{${ by-author:_authors.tex()[\and ] }}
+
+% Set the date
+\date{$date$}
+
+
+ 

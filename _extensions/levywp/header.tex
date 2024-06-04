@@ -1,0 +1,34 @@
+% TODO: Add custom LaTeX header directives here
+
+\raggedright
+\usepackage{ragged2e}  
+\usepackage[hang,flushmargin,ragged]{footmisc}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage{tikz}
+\usepackage{datetime}
+\titlespacing*{\section}{0pt}{2\baselineskip}{\baselineskip}
+\titlespacing*{\subsection}{0pt}{1\baselineskip}{0\baselineskip}
+\titlespacing*{\subsubsectionfont}{0pt}{1\baselineskip}{0\baselineskip}        
+\sectionfont{\normalfont\bfseries\normalsize\MakeUppercase}
+\subsectionfont{\normalfont\bfseries\normalsize}
+\subsubsectionfont{\normalfont\normalsize\itshape}   
+\usepackage{caption}
+\captionsetup[figure]{font=normal,labelfont=bf}
+\captionsetup[table]{font=normal,labelfont=bf} 
+
+
+%% Footer
+\usepackage{booktabs}
+\usepackage{chngcntr}
+\usepackage{apptools}
+\AtAppendix{\counterwithin{table}{section}}
+\AtAppendix{\counterwithin{figure}{section}}
+\usepackage{multicol}
+\usepackage{etoolbox}
+\usepackage{fancyhdr}
+\newcommand{\minim}[2]{\ifthenelse{\value{#1}<\value{#2}}{\value{#1}}{\value{#2}}}
+
+\usepackage{geometry}
+\usepackage{fancyhdr}
+ 

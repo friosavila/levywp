@@ -1,0 +1,73 @@
+
+\fancypagestyle{titlepagestyle}{
+    \fancyhf{} % clear all header and footer fields
+
+    \renewcommand{\headrulewidth}{0pt} % remove the header rule
+}
+
+\newgeometry{left=1in, right=1in, top=0.5in, bottom=0.5in} % change the margins
+
+
+\begin{titlepage}
+
+\begin{minipage}[t][0.70\textheight][t]{\textwidth} 
+\renewcommand{\thempfootnote}{\fnsymbol{mpfootnote}} 
+    \centering
+    \includegraphics[width=0.25\textwidth]{_extensions/levywp/logo.png}\\[0.25cm]
+    \textbf{\large{\textcolor{Navy}{\fontspec{Arial}Working Paper No. $wpnumber$}}}\\[0.3cm]
+
+    \textcolor{lightgray}{\rule{0.8\textwidth}{0.5mm}}\\[0.5cm]
+
+    \center{\textbf{$title$\footnote{$thanks$}}} \\[0.5cm]
+    \center{\textbf{by}} \\[0.5cm]
+ % fill the vertical space
+
+ ${ by-author:_authors.tex()  }
+
+ \center{$date$}
+
+ \vfill 
+ ~
+ \end{minipage}
+ 
+
+\center{\textcolor{lightgray}{\rule{0.8\textwidth}{0.5mm}}}\\[0.5cm]
+        \vfill
+    \begin{minipage}[b][0.20\textheight][b]{\textwidth}
+    
+        
+        \begin{minipage}{\textwidth}
+            \small
+            The Levy Economics Institute Working Paper Collection presents research in progress by Levy Institute scholars and conference participants. The purpose of the series is to disseminate ideas to and elicit comments from academics and professionals.
+        \end{minipage}\\[0.5cm]
+
+        % Content of the bottom minipage (25% of the page)
+        \begin{center}
+        \fcolorbox{black}{lightgray}{
+            \begin{minipage}{0.85\textwidth}
+            \footnotesize
+            Levy Economics Institute of Bard College, founded in 1986, is a nonprofit, nonpartisan, independently funded research organization devoted to public service. Through scholarship and economic research, it generates viable, effective public policy responses to important economic problems that profoundly affect the quality of life in the United States and abroad.
+            \end{minipage}
+        }
+        \end{center} 
+        \centering
+        \vspace{0.5cm}
+        \footnotesize   
+        Levy Economics Institute\\
+        P.O. Box 5000\\
+        Annandale-on-Hudson, NY 12504-5000\\
+        http://www.levyinstitute.org\\
+        Copyright \textcopyright\ Levy Economics Institute 2024 All rights reserved\\
+        ISSN 1547-366X
+
+    \end{minipage}
+  
+\thispagestyle{empty}
+\clearpage\pagenumbering{arabic}
+
+\end{titlepage}
+
+\restoregeometry
+
+\newpage
+

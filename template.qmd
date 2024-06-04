@@ -1,0 +1,128 @@
+---
+title: Social Security and Gender Inequality
+thanks: "The author is grateful to Collin Constantine and Ramesh Gampat for providing valuable comments
+which have helped to improve the paper. Errors that remain are the author’s responsibility."
+crossref:
+  title-delim: "."   # (default is ":")
+format:
+  levywp-pdf:
+    keep-tex: true  
+  levywp-html: default
+authors:
+  - name: "Author1"
+    affiliations:
+      - name: "Affiliation1"
+        city: "City1"
+  - name: "Author2"
+    acknowledgements: "Thanks2"
+    affiliations:
+      - name: "Affiliation2"
+        city: "City2"
+  - name: "Author1"
+    affiliations:
+      - name: "Affiliation1"
+        city: "City1"
+  - name: "Author2"
+    acknowledgements: "Thanks2"
+    affiliations:
+      - name: "Affiliation2"
+        city: "City2"
+date: today
+wpnumber: ???
+abstract: |
+  This document is a template demonstrating the Levywp format. \lipsum[1]
+keywords: "template, demonstration, Levywp, Quarto"
+jel: "A00, B00, C00"
+bibliography: bibliography.bib  
+---
+
+
+
+{{< pagebreak >}}
+
+**ABSTRACT**
+
+\vspace{1.5em}
+
+{{< meta abstract >}}
+
+\vspace{1.5em}
+
+**KEY WORDS:** {{< meta keywords >}}
+
+**JEL CLASSIFICATION:** {{< meta jel >}}
+
+{{< pagebreak >}}
+
+# Introduction {#sec-intro}
+
+*TODO* Create a template that demonstrates the appearance, formatting, layout, and functionality of your format. Learn more about journal formats at <https://quarto.org/docs/journals/>.
+
+@blsreport, @masterson2010, @rios2015
+
+
+\lipsum[1-2]
+
+More text ^[This is a footnote.]
+
+\lipsum[1] ^[\lipsum[1]]
+
+
+
+# Level 1
+
+## Level 1.0
+
+\lipsum[1-2]
+
+## Level 2
+
+\lipsum[1-2]
+
+### Level 3
+
+
+:::{#tbl-one tbl-pos=H}
+
+\begin{table}
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Header 1 & Header 2 & Header 3 \\ \hline
+Cell 1   & Cell 2   & Cell 3   \\ \hline
+Cell 4   & Cell 5   & Cell 6   \\ \hline
+\end{tabular}
+\end{table}
+
+\textbf{Title here}
+
+:::
+
+\lipsum[1-2]
+
+:::{#fig-one tbl-pos=H}
+
+\begin{tikzpicture}
+  \node[draw, circle] (A) at (0,0) {A};
+  \node[draw, circle] (B) at (2,0) {B};
+  \draw[->] (A) -- (B);
+\end{tikzpicture}
+
+\textbf{Title here}
+
+:::
+
+
+This is indeed a lot of text that im now generating  After you make your repository a template, anyone with access to the repository can generate a new repository with the same directory structure and files as your default branch. They can also choose to include all the other branches in your repository. Branches created from a template have unrelated histories, so you cannot create pull requests or merge between the branches. For more information, see "Creating a repository from a template."After you make your repository a template, anyone with access to the repository can generate a new repository with the same directory structure and files as your default branch. They can also choose to include all the other branches in your repository. Branches created from a template have unrelated histories, so you cannot create pull requests or merge between the branches. For more information, see "Creating a repository from a template."
+
+# References
+
+\singlespacing
+:::{#refs}
+:::
+
+\onehalfspacing
+
+# Appendix
+
+\lipsum[1-2]
