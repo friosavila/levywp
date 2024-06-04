@@ -1,7 +1,5 @@
 ---
-title: Social Security and Gender Inequality
-thanks: "The author is grateful to Collin Constantine and Ramesh Gampat for providing valuable comments
-which have helped to improve the paper. Errors that remain are the author’s responsibility ."
+title: Levy Economics Institute Working Paper Template
 crossref:
   title-delim: "."   # (default is ":")
 format:
@@ -13,10 +11,11 @@ authors:
       affiliations:
         - name: "Levy Economics Institute"
           address: Annandale-on-Hudson, NY 12504
-    - name: "Aashima Sinha"
+      acknowledgements: "The author thanks the Levy Economics Institute for financial support."
+    - name: "Author 2"
       affiliations:
-        - name: "Levy Economics Institute"
-          address: Annandale-on-Hudson, NY 12504
+        - name: "Some other Institute"          
+      acknowledgements: "The author thanks SOI for moral support." 
 date: today
 wpnumber: ???
 keywords: "template, demonstration, Levywp, Quarto"
@@ -41,7 +40,9 @@ bibliography: bibliography.bib
 
 More text ^[This is a footnote.]
 
-\lipsum[1] ^[\lipsum[1]]
+\lipsum[1] Here[^3]
+
+[^3]: This is a longer note with Text.\lipsum[1]
 
 
 
