@@ -1,9 +1,7 @@
 
-\fancypagestyle{titlepagestyle}{
-    \fancyhf{} % clear all header and footer fields
-
-    \renewcommand{\headrulewidth}{0pt} % remove the header rule
-}
+\let\origfootnoterule\footnoterule
+\renewcommand{\footnoterule}{}
+\definecolor{levyblue}{RGB}{0, 70, 139}
 
 \newgeometry{left=1in, right=1in, top=0.5in, bottom=0.5in} % change the margins
 
@@ -13,12 +11,13 @@
 \begin{minipage}[t][0.70\textheight][t]{\textwidth} 
 \renewcommand{\thempfootnote}{\fnsymbol{mpfootnote}} 
     \centering
-    \includegraphics[width=0.25\textwidth]{_extensions/levywp/logo.png}\\[0.25cm]
-    \textbf{\large{\textcolor{Navy}{\fontspec{Arial}Working Paper No. $wpnumber$}}}\\[0.3cm]
+    \includegraphics[width=0.25\textwidth]{logo.png}\\[0.25cm]
+    \textbf{\large{\textcolor{levyblue}{\fontspec{Arial}Working Paper No. $wpnumber$}}}\\[0.3cm]
 
     \textcolor{lightgray}{\rule{0.8\textwidth}{0.5mm}}\\[0.5cm]
 
     \center{\textbf{$title$\footnote{$thanks$}}} \\[0.5cm]
+    $if(subtitle)$\center{\textbf{$subtitle$}\\[0.5cm]}$endif$ 
     \center{\textbf{by}} \\[0.5cm]
  % fill the vertical space
 
@@ -61,13 +60,17 @@
         ISSN 1547-366X
 
     \end{minipage}
-  
+
+    
 \thispagestyle{empty}
 \clearpage\pagenumbering{arabic}
 
 \end{titlepage}
 
+\let\footnoterule\origfootnoterule
+
 \restoregeometry
 
 \newpage
 
+$_abstract.tex()$

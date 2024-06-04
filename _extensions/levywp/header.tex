@@ -16,19 +16,16 @@
 \usepackage{caption}
 \captionsetup[figure]{font=normal,labelfont=bf}
 \captionsetup[table]{font=normal,labelfont=bf} 
+ 
+\setlength{\parskip}{1.5em}
 
-
-%% Footer
-\usepackage{booktabs}
-\usepackage{chngcntr}
-\usepackage{apptools}
-\AtAppendix{\counterwithin{table}{section}}
-\AtAppendix{\counterwithin{figure}{section}}
 \usepackage{multicol}
 \usepackage{etoolbox}
 \usepackage{fancyhdr}
-\newcommand{\minim}[2]{\ifthenelse{\value{#1}<\value{#2}}{\value{#1}}{\value{#2}}}
-
 \usepackage{geometry}
 \usepackage{fancyhdr}
  
+\usepackage{booktabs}
+\usepackage{chngcntr}
+\usepackage{apptools}
+

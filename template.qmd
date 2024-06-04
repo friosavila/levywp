@@ -1,58 +1,34 @@
 ---
 title: Social Security and Gender Inequality
 thanks: "The author is grateful to Collin Constantine and Ramesh Gampat for providing valuable comments
-which have helped to improve the paper. Errors that remain are the author’s responsibility."
+which have helped to improve the paper. Errors that remain are the author’s responsibility ."
 crossref:
   title-delim: "."   # (default is ":")
 format:
-  levywp-pdf:
+  levywp-pdf:  
     keep-tex: true  
-  levywp-html: default
+    number-depth: 3
 authors:
-  - name: "Author1"
-    affiliations:
-      - name: "Affiliation1"
-        city: "City1"
-  - name: "Author2"
-    acknowledgements: "Thanks2"
-    affiliations:
-      - name: "Affiliation2"
-        city: "City2"
-  - name: "Author1"
-    affiliations:
-      - name: "Affiliation1"
-        city: "City1"
-  - name: "Author2"
-    acknowledgements: "Thanks2"
-    affiliations:
-      - name: "Affiliation2"
-        city: "City2"
+    - name: "Fernando Rios-Avila"
+      affiliations:
+        - name: "Levy Economics Institute"
+          address: Annandale-on-Hudson, NY 12504
+    - name: "Aashima Sinha"
+      affiliations:
+        - name: "Levy Economics Institute"
+          address: Annandale-on-Hudson, NY 12504
 date: today
 wpnumber: ???
-abstract: |
-  This document is a template demonstrating the Levywp format. \lipsum[1]
 keywords: "template, demonstration, Levywp, Quarto"
 jel: "A00, B00, C00"
+abstract: |
+    This document is a template demonstrating the Levywp format. \lipsum[1]
+
 bibliography: bibliography.bib  
 ---
 
 
 
-{{< pagebreak >}}
-
-**ABSTRACT**
-
-\vspace{1.5em}
-
-{{< meta abstract >}}
-
-\vspace{1.5em}
-
-**KEY WORDS:** {{< meta keywords >}}
-
-**JEL CLASSIFICATION:** {{< meta jel >}}
-
-{{< pagebreak >}}
 
 # Introduction {#sec-intro}
 

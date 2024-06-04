@@ -25,12 +25,14 @@ contributes:
       fontsize: 12pt
       tbl-cap-location: top
       fig-cap-location: top
-      template-partials: 
+      format-resources:
         - "logo.png"
+      template-partials: 
         - "citations.tex"
         - "title.tex"    
         - "before-body.tex"
         - "_authors.tex"
+        - "_abstract.tex"
     html:
       css: styles.css
 
